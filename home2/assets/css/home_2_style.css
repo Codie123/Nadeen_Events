@@ -185,15 +185,20 @@
   padding: 0 3vw;
 }
 .tc-navbar-style2 .container-fluid {
-  padding: 30px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #ccc;
 }
 .tc-navbar-style2 .navbar-brand {
-  -webkit-margin-end: 170px;
-  margin-inline-end: 170px;
+  /* -webkit-margin-end: 170px; */
+  /* margin-inline-end: 170px; */
 }
 .tc-navbar-style2 .navbar-brand img {
-  height: 35px;
+  height: 132px;
+}
+@media (max-width: 600px) {
+  .tc-navbar-style2 .navbar-brand img {
+    height: 100px;
+  }
 }
 .tc-navbar-style2 .nav-contact {
   display: -webkit-box;
@@ -370,6 +375,11 @@
 .tc-header-style2 .top-info .facts-wrapper .num {
   font-size: 60px;
   font-weight: 400;
+}
+@media (max-width: 376px) {
+  .tc-header-style2 .top-info .facts-wrapper .num {
+    font-size: 1.875rem;
+  }
 }
 .tc-header-style2 .top-info .facts-wrapper p {
   color: #666;
@@ -608,7 +618,7 @@
     bottom: 100px;
   }
   .tc-header-style2 .slider-content .head-slider .slider-card .info .title a {
-    font-size: 35px;
+    font-size: 31px;
   }
   .tc-header-style2 .slider-content .head-slider .controls {
     right: 50%;
@@ -680,7 +690,15 @@
   position: relative;
   z-index: 5;
 }
-
+@media (max-width: 376px) {
+  .offset-lg-1 .btns .butn {
+    padding: 0.9375rem 1.25rem;
+  }
+  .tc-services-style2 .btns {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 991px) {
   .tc-services-style2 {
     padding: 80px 0;
@@ -1130,7 +1148,7 @@
   font-weight: 500;
 }
 .tc-projects-style2 .project-card .info .tags {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1663,7 +1681,8 @@
   border-color: var(--color-orange1);
   color: #fff;
 }
-
+@media (max-width: 376px) {
+}
 @media screen and (max-width: 991px) {
   .tc-footer-style2 .logo {
     margin-bottom: 30px;
@@ -1704,7 +1723,7 @@
     margin-top: 50px !important;
   }
   .home-style2 .fsz-45 {
-    font-size: 30px !important;
+    font-size: 28px !important;
   }
   .home-style2 .mt-70 {
     margin-top: 45px !important;

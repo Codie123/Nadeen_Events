@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="./assets/css/home_2_style.css" />
   </head>
 
-  <body class="home-style2">
+  <body class="home-style2" onload="translate('en','lng-tag')">
     <!-- ====== Start Loading ====== -->
 
     <div class="loader-wrap">
@@ -71,7 +71,7 @@
 
       <div class="loader-wrap-heading">
         <div class="text-center">
-          <img src="./assets/img/Frame 2.png" alt="" class="logo" />
+          <img src="./assets/img/preloader-logo.png" alt="" class="logo" />
           <div class="load-text">
             <span>L</span>
             <span>o</span>
@@ -92,18 +92,21 @@
       <div class="content">
         <div class="main_links">
           <ul>
-            <li><a href="index.html" class="main_link"> home </a></li>
             <li>
-              <a href="about.html" class="main_link"> about us </a>
+              <a href="index.html" class="main_link" lng-tag="home"> home </a>
             </li>
             <li>
-              <a href="works.html" class="main_link"> works </a>
+              <a href="about.html" class="main_link" lng-tag="about">
+                about us
+              </a>
             </li>
             <li>
-              <a href="social.html" class="main_link"> instagram </a>
+              <a href="works.html" class="main_link" lng-tag="works"> works </a>
             </li>
             <li>
-              <a href="contact.html" class="main_link"> contact </a>
+              <a href="contact.html" class="main_link" lng-tag="contact">
+                contact
+              </a>
             </li>
           </ul>
         </div>
@@ -119,25 +122,19 @@
       <nav class="navbar navbar-expand-lg navbar-light tc-navbar-style2">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <!-- <img src="assets/img/Frame 2.png" alt="" /> -->
-            <h4>Nadeen Events</h4>
+            <img src="assets/img/preloader-logo.png" alt="" />
+            <!-- <h4>Nadeen Events</h4> -->
           </a>
 
           <div class="navbar" id="">
-            <div class="nav-contact d-none d-lg-block">
-              <div class="links-item">
-                <a href="#">
-                  Koshat Nadine, Ground Floor, 6969 Prince Mishal,<br />
-                  Intersection 7/8, Northern Khobar District,<br />
-                  Al Khobar 34428
-                </a>
-              </div>
-              <div class="links-item">
-                <a href="#"> hello@nadeenevents.com </a>
-                <a href="#"> (+966) 500033887 </a>
-              </div>
+            <div class="nav-side">
+              <a href="#" class="icon ms-3" id="enTranslator">
+                <span> EN </span>
+              </a>
+              <a href="#" class="icon ms-3" id="arTranslator">
+                <span> عربي </span>
+              </a>
             </div>
-
             <div class="nav-icons">
               <a href="#" class="icon side_menu_btn">
                 <i class="fal fa-grip-lines"></i>
@@ -155,17 +152,20 @@
             <div class="container">
               <div class="row justify-content-between">
                 <div class="col-lg-8">
-                  <h1>
+                  <h1 lng-tag="herotitle">
                     Crafting Your Perfect
                     <span class="sub-font"> Celebration </span>
                   </h1>
                   <div class="award-wrapper">
-                    <p>Follow Our Journey on Instagram!</p>
+                    <p lng-tag="herosubtext">
+                      Follow Our Journey on Instagram!
+                    </p>
                     <span class="line"></span>
                     <p>
                       <a
-                        href="https://www.instagram.com/nadeen_events?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        href="https://www.instagram.com/nadeen_.events?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                         target="_blank"
+                        lng-tag="heroiglink"
                         >@nadeen_events</a
                       >
                     </p>
@@ -174,7 +174,10 @@
                 <div class="col-lg-4">
                   <div class="side-info ps-lg-5">
                     <div class="facts-wrapper" data-speed="1" data-lag="0.5">
-                      <div class="title fsz-12 text-uppercase mb-30">
+                      <div
+                        class="title fsz-12 text-uppercase mb-30"
+                        lng-tag="facts"
+                      >
                         <i class="icon-6 bg-orange1 rounded-circle me-2"></i>
                         The Facts
                       </div>
@@ -184,19 +187,19 @@
                             <h2 class="num sub-font">
                               <span class="counter">92</span>%
                             </h2>
-                            <p>Clients Satisfied</p>
+                            <p lng-tag="facts1">Clients Satisfied</p>
                           </div>
                           <div class="col-6">
                             <h2 class="num sub-font">
                               <span class="counter">152</span>
                             </h2>
-                            <p>Projects Done</p>
+                            <p lng-tag="facts2">Projects Done</p>
                           </div>
                         </div>
                       </div>
                       <img src="assets/img/subtract.png" alt="" class="line" />
                     </div>
-                    <div class="text color-666 mt-80">
+                    <div class="text color-666 mt-80" lng-tag="ourgoal">
                       Our goal is to create spaces that are not only <br />
                       beautiful, but also functional & comfortable
                     </div>
@@ -218,7 +221,7 @@
                   <div class="slider-card">
                     <div class="img">
                       <img
-                        src="assets/img/slider1.jpg"
+                        src="assets/img/slider/slider-1.jpeg"
                         alt=""
                         class="main-img img-cover"
                       />
@@ -227,11 +230,13 @@
                       <div class="container">
                         <div class="cont">
                           <div class="tags gap-1">
-                            <a href="#"> Wedding </a>
-                            <a href="#"> Indoor </a>
+                            <a href="#" lng-tag="wedding"> Wedding </a>
+                            <a href="#" lng-tag="indoor"> Indoor </a>
                           </div>
                           <h2 class="title">
-                            <a href="#"> #Nadeen_Events <br /> </a>
+                            <a href="#" lng-tag="tagtext1">
+                              #Nadeen_Events <br />
+                            </a>
                           </h2>
                         </div>
                       </div>
@@ -242,7 +247,7 @@
                   <div class="slider-card">
                     <div class="img">
                       <img
-                        src="assets/img/slider2.jpg"
+                        src="assets/img/slider/slider-2.jpeg"
                         alt=""
                         class="main-img img-cover"
                       />
@@ -251,11 +256,13 @@
                       <div class="container">
                         <div class="cont">
                           <div class="tags gap-1">
-                            <a href="#"> Wedding </a>
-                            <a href="#"> Indoor</a>
+                            <a href="#" lng-tag="wedding"> Wedding </a>
+                            <a href="#" lng-tag="indoor"> Indoor</a>
                           </div>
                           <h2 class="title">
-                            <a href="#"> #Nadeen_Events <br /> </a>
+                            <a href="#" lng-tag="tagtext2">
+                              #Nadeen_Events <br />
+                            </a>
                           </h2>
                         </div>
                       </div>
@@ -266,7 +273,7 @@
                   <div class="slider-card">
                     <div class="img">
                       <img
-                        src="assets/img/slider3.jpg"
+                        src="assets/img/slider/slider-3.jpeg"
                         alt=""
                         class="main-img img-cover"
                       />
@@ -275,11 +282,11 @@
                       <div class="container">
                         <div class="cont">
                           <div class="tags gap-1">
-                            <a href="#"> Wedding </a>
-                            <a href="#"> Indoor </a>
+                            <a href="#" lng-tag="wedding"> Wedding </a>
+                            <a href="#" lng-tag="indoor"> Indoor </a>
                           </div>
                           <h2 class="title">
-                            <a href="#"> #Nadeen_Events </a>
+                            <a href="#" lng-tag="tagtext3"> #Nadeen_Events </a>
                           </h2>
                         </div>
                       </div>
@@ -304,7 +311,9 @@
                   <span class="icon"
                     ><i class="fa-solid fa-ranking-star"></i>
                   </span>
-                  <b class="fsz-18 fw-600"> Tailored Experiences </b>
+                  <b class="fsz-18 fw-600" lng-tag="feat1">
+                    Tailored Experiences
+                  </b>
                 </div>
               </div>
               <div class="col-lg-3">
@@ -312,7 +321,9 @@
                   <span class="icon"
                     ><i class="fa-solid fa-ruler-combined"></i>
                   </span>
-                  <b class="fsz-18 fw-600"> Stress-Free Planning </b>
+                  <b class="fsz-18 fw-600" lng-tag="feat2">
+                    Stress-Free Planning
+                  </b>
                 </div>
               </div>
               <div class="col-lg-3">
@@ -320,7 +331,9 @@
                   <span class="icon">
                     <i class="fa-solid fa-medal"></i>
                   </span>
-                  <b class="fsz-18 fw-600"> Attention to Detail </b>
+                  <b class="fsz-18 fw-600" lng-tag="feat3">
+                    Attention to Detail
+                  </b>
                 </div>
               </div>
             </div>
@@ -336,7 +349,7 @@
           <div class="container">
             <div class="row gx-0">
               <div class="col-lg-7">
-                <h2 class="fsz-45 fw-500 mb-50">
+                <h2 class="fsz-45 fw-500 mb-50" lng-tag="servicestitle">
                   Nadeen's
                   <span class="sub-font fst-italic color-orange1 fw-400">
                     services
@@ -361,8 +374,10 @@
                           </div>
                         </div>
                         <div class="info pt-30">
-                          <h4 class="fsz-24">Wedding Planning</h4>
-                          <p class="color-666 mt-15">
+                          <h4 class="fsz-24" lng-tag="servicetitle1">
+                            Wedding Planning
+                          </h4>
+                          <p class="color-666 mt-15" lng-tag="servicetext1">
                             Sit back and relax as we orchestrate every aspect of
                             your wedding, from venue selection to the last
                             dance.
@@ -387,8 +402,10 @@
                           </div>
                         </div>
                         <div class="info pt-30">
-                          <h4 class="fsz-24">Partial Planning</h4>
-                          <p class="color-666 mt-15">
+                          <h4 class="fsz-24" lng-tag="servicetitle2">
+                            Partial Planning
+                          </h4>
+                          <p class="color-666 mt-15" lng-tag="servicetext2">
                             Already started planning? Let us step in and guide
                             you through the remaining details.
                           </p>
@@ -412,8 +429,10 @@
                           </div>
                         </div>
                         <div class="info pt-30">
-                          <h4 class="fsz-24">Day-of Coordination</h4>
-                          <p class="color-666 mt-15">
+                          <h4 class="fsz-24" lng-tag="servicetitle3">
+                            Day-of Coordination
+                          </h4>
+                          <p class="color-666 mt-15" lng-tag="servicetext3">
                             Enjoy your wedding day stress-free while we handle
                             the logistics behind the scenes.
                           </p>
@@ -424,7 +443,10 @@
                 </div>
               </div>
               <div class="col-lg-4 offset-lg-1">
-                <h2 class="fsz-45 sub-font fw-500 js-splittext-lines">
+                <h2
+                  class="fsz-45 sub-font fw-500 js-splittext-lines"
+                  lng-tag="servicetext4"
+                >
                   Our mission is to design spaces
                   <span class="color-orange1">
                     that seamlessly blend beauty,
@@ -434,19 +456,13 @@
                 </h2>
                 <div class="btns">
                   <a
-                    href="#"
+                    href="about.html"
                     class="butn borderd border rounded-pill mt-70 hover-bg-black me-2"
                   >
-                    <span>
+                    <span lng-tag="aboutUs">
                       About Us
                       <i class="ms-2 fal fa-long-arrow-right ico-45"></i>
                     </span>
-                  </a>
-                  <a
-                    href="#"
-                    class="butn rounded-pill mt-70 hover-bg-black bg-orange1 text-white"
-                  >
-                    <span> Our Showreel <i class="ms-2 fal fa-play"></i> </span>
                   </a>
                 </div>
               </div>
@@ -454,7 +470,10 @@
             <div class="btm-info mt-50">
               <div class="row gx-0">
                 <div class="col-lg-7">
-                  <h5 class="fsz-24 lh-4 wow fadeInUp slow">
+                  <h5
+                    class="fsz-24 lh-4 wow fadeInUp slow"
+                    lng-tag="abouttext1"
+                  >
                     We provide best solution for your dream, still adapt your
                     budget and match with requires about quality of project
                   </h5>
@@ -462,7 +481,7 @@
                     href="#"
                     class="butn borderd border rounded-pill mt-70 hover-bg-black"
                   >
-                    <span>
+                    <span lng-tag="seeprojects">
                       See Our Projects
                       <i class="ms-2 fal fa-long-arrow-right ico-45"></i>
                     </span>
@@ -471,8 +490,10 @@
                 <div class="col-lg-4 offset-lg-1">
                   <div class="phone-box" data-speed="1" data-lag="0.5">
                     <img src="assets/img/subtract2.png" alt="" class="bg-img" />
-                    <h2 class="fsz-45 sub-font fw-400">T: +966 0500033887</h2>
-                    <p class="color-666 mt-40">
+                    <h2 class="fsz-45 sub-font fw-400" lng-tag="telephone">
+                      T: +966 0500033887
+                    </h2>
+                    <p class="color-666 mt-40" lng-tag="callus">
                       Call us direct 24/7 for get a <br />
                       free consultation
                     </p>
@@ -489,7 +510,7 @@
         <!-- Image left  -->
         <section class="tc-process-style2">
           <div class="container">
-            <h2 class="fsz-45 fw-500 mb-80 text-center">
+            <h2 class="fsz-45 fw-500 mb-80 text-center" lng-tag="process">
               Our Approach
               <span class="sub-font fst-italic color-orange1 fw-400">
                 process
@@ -509,7 +530,7 @@
                             data-bs-target="#collapseOne"
                           >
                             <span class="num"> 1 / </span>
-                            <h3>Vision</h3>
+                            <h3 lng-tag="vision">Vision</h3>
                           </button>
                         </div>
                         <div
@@ -518,7 +539,7 @@
                           data-bs-parent="#accordionProcess"
                         >
                           <div class="accordion-body">
-                            <div class="text">
+                            <div class="text" lng-tag="visiontext">
                               We begin by getting to know you—the couple behind
                               the love story. Our initial consultation dives
                               deep into your vision, preferences, and unique
@@ -538,7 +559,7 @@
                             data-bs-target="#collapseTwo"
                           >
                             <span class="num"> 2 / </span>
-                            <h3>Conceptualization</h3>
+                            <h3 lng-tag="conception">Conception</h3>
                           </button>
                         </div>
                         <div
@@ -547,7 +568,7 @@
                           data-bs-parent="#accordionProcess"
                         >
                           <div class="accordion-body">
-                            <div class="text">
+                            <div class="text" lng-tag="conceptiontext">
                               Armed with insights from our consultation, we
                               embark on the creative journey. Our team of
                               designers, planners, and visionaries collaborates
@@ -567,7 +588,7 @@
                             data-bs-target="#collapseThree"
                           >
                             <span class="num"> 3 / </span>
-                            <h3>Vendor Curation</h3>
+                            <h3 lng-tag="curation">Vendor Curation</h3>
                           </button>
                         </div>
                         <div
@@ -576,7 +597,7 @@
                           data-bs-parent="#accordionProcess"
                         >
                           <div class="accordion-body">
-                            <div class="text">
+                            <div class="text" lng-tag="curationtext">
                               We believe in quality over quantity. Nadeen Events
                               curates a network of top-tier vendors who share
                               our commitment to excellence. Whether it’s
@@ -596,7 +617,7 @@
                             data-bs-target="#collapseFour"
                           >
                             <span class="num"> 4 / </span>
-                            <h3>Planning and Execution</h3>
+                            <h3 lng-tag="planning">Planning and Execution</h3>
                           </button>
                         </div>
                         <div
@@ -605,7 +626,7 @@
                           data-bs-parent="#accordionProcess"
                         >
                           <div class="accordion-body">
-                            <div class="text">
+                            <div class="text" lng-tag="planningtext">
                               Our meticulous planning process ensures that no
                               detail is overlooked. From venue scouting to
                               timeline management, we handle it all. On the big
@@ -620,7 +641,7 @@
                       href="#"
                       class="butn bg-white rounded-pill mt-50 hover-bg-black"
                     >
-                      <span>
+                      <span lng-tag="getFreeQuotes">
                         Get A Free Quotes
                         <i class="ms-2 fal fa-long-arrow-right ico-45"></i>
                       </span>
@@ -631,19 +652,23 @@
                   <div class="imgs">
                     <div class="img" data-lag="0.2">
                       <img
-                        src="assets/img/process/proc1.jpg"
+                        src="assets/img/process/proc1.jpeg"
                         alt=""
                         class="img-cover"
                       />
-                      <span class="txt sub-font"> Vision </span>
+                      <span class="txt sub-font" lng-tag="vision">
+                        Vision
+                      </span>
                     </div>
                     <div class="img" data-lag="0.4">
                       <img
-                        src="assets/img/process/proc2.jpg"
+                        src="assets/img/process/proc2.jpeg"
                         alt=""
                         class="img-cover"
                       />
-                      <span class="txt sub-font"> Conceptualization </span>
+                      <span class="txt sub-font" lng-tag="conception">
+                        Conception
+                      </span>
                     </div>
                     <div class="img" data-lag="0.3">
                       <img
@@ -651,7 +676,9 @@
                         alt=""
                         class="img-cover"
                       />
-                      <span class="txt sub-font"> Vendor </span>
+                      <span class="txt sub-font" lng-tag="vendor">
+                        Vendor
+                      </span>
                     </div>
                     <div class="img" data-lag="0.5">
                       <img
@@ -659,7 +686,9 @@
                         alt=""
                         class="img-cover"
                       />
-                      <span class="txt sub-font"> Execution </span>
+                      <span class="txt sub-font" lng-tag="execution">
+                        Execution
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -675,7 +704,7 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-8">
-                <h2 class="fsz-45 fw-500">
+                <h2 class="fsz-45 fw-500" lng-tag="latestprojects">
                   Latest
                   <span class="sub-font fst-italic color-orange1 fw-400">
                     projects
@@ -687,7 +716,7 @@
                   href="#"
                   class="butn borderd border rounded-pill hover-bg-black"
                 >
-                  <span>
+                  <span lng-tag="seeAllProjects">
                     See All Projects
                     <i class="ms-2 fal fa-long-arrow-right ico-45"></i>
                   </span>
@@ -703,6 +732,7 @@
                     data-bs-toggle="pill"
                     data-bs-target="#pills-proj1"
                     type="button"
+                    lng-tag="indoorweddings"
                   >
                     Indoor Wedding
                   </button>
@@ -714,32 +744,11 @@
                     data-bs-toggle="pill"
                     data-bs-target="#pills-proj2"
                     type="button"
+                    lng-tag="outdoorweddings"
                   >
                     Outdoor Wedding
                   </button>
                 </li>
-                <!-- <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-proj3-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-proj1"
-                    type="button"
-                  >
-                    Rennovation
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-proj4-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-proj2"
-                    type="button"
-                  >
-                    Furniture
-                  </button>
-                </li> -->
               </ul>
             </div>
           </div>
@@ -755,9 +764,9 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="project-card">
-                        <a href="#" class="img">
+                        <a href="javascript:void(0)" class="img">
                           <img
-                            src="assets/img/projects/indoor-1.png"
+                            src="assets/img/projects/indoor-1.jpg"
                             alt=""
                             class="img-cover"
                           />
@@ -775,20 +784,22 @@
                         </a>
                         <div class="info">
                           <div class="tags">
-                            <a href="#"> Indoor Wedding </a>
+                            <a
+                              href="javascript:void(0)"
+                              lng-tag="indoorweddings"
+                            >
+                              Indoor Wedding
+                            </a>
                             <!-- <a href="#">  </a> -->
                           </div>
-                          <h3 class="title">
-                            <a href="#"> </a>
-                          </h3>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="project-card">
-                        <a href="#" class="img">
+                        <a href="javascript:void(0)" class="img">
                           <img
-                            src="assets/img/projects/indoor-2.png"
+                            src="assets/img/projects/indoor-2.jpg"
                             alt=""
                             class="img-cover"
                           />
@@ -806,19 +817,21 @@
                         </a>
                         <div class="info">
                           <div class="tags">
-                            <a href="#"> Indoor Wedding </a>
+                            <a
+                              href="javascript:void(0)"
+                              lng-tag="indoorweddings"
+                            >
+                              Indoor Wedding
+                            </a>
                           </div>
-                          <h3 class="title">
-                            <a href="#"> </a>
-                          </h3>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="project-card">
-                        <a href="#" class="img">
+                        <a href="javascript:void(0)" class="img">
                           <img
-                            src="assets/img/projects/indoor-3.png"
+                            src="assets/img/projects/indoor-3.jpg"
                             alt=""
                             class="img-cover"
                           />
@@ -836,20 +849,22 @@
                         </a>
                         <div class="info">
                           <div class="tags">
-                            <a href="#"> Indoor Wedding </a>
+                            <a
+                              href="javascript:void(0)"
+                              lng-tag="indoorweddings"
+                            >
+                              Indoor Wedding
+                            </a>
                             <!-- <a href="#"> Furniture </a> -->
                           </div>
-                          <h3 class="title">
-                            <a href="#"> </a>
-                          </h3>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="project-card">
-                        <a href="#" class="img">
+                        <a href="javascript:void(0)" class="img">
                           <img
-                            src="assets/img/projects/indoor-4.png"
+                            src="assets/img/projects/indoor-4.JPG"
                             alt=""
                             class="img-cover"
                           />
@@ -867,12 +882,14 @@
                         </a>
                         <div class="info">
                           <div class="tags">
-                            <a href="#"> Indoor Wedding </a>
+                            <a
+                              href="javascript:void(0)"
+                              lng-tag="indoorweddings"
+                            >
+                              Indoor Wedding
+                            </a>
                             <!-- <a href="#"> Furniture </a> -->
                           </div>
-                          <h3 class="title">
-                            <a href="#"> </a>
-                          </h3>
                         </div>
                       </div>
                     </div>
@@ -896,9 +913,9 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="project-card">
-                        <a href="#" class="img">
+                        <a href="javascript:void(0)" class="img">
                           <img
-                            src="assets/img/projects/outdoor-1.png"
+                            src="assets/img/projects/outdoor-1.jpg"
                             alt=""
                             class="img-cover"
                           />
@@ -916,20 +933,21 @@
                         </a>
                         <div class="info">
                           <div class="tags">
-                            <a href="#"> Outdoor Wedding </a>
-                            <!-- <a href="#"> </a> -->
+                            <a
+                              href="javascript:void(0)"
+                              lng-tag="outdoorweddings"
+                            >
+                              Outdoor Wedding
+                            </a>
                           </div>
-                          <h3 class="title">
-                            <a href="#"> </a>
-                          </h3>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="project-card">
-                        <a href="#" class="img">
+                        <a href="javascript:void(0)" class="img">
                           <img
-                            src="assets/img/projects/outdoor-2.png"
+                            src="assets/img/projects/outdoor-2.jpg"
                             alt=""
                             class="img-cover"
                           />
@@ -947,18 +965,20 @@
                         </a>
                         <div class="info">
                           <div class="tags">
-                            <a href="#"> Outdoor Wedding </a>
-                            <!-- <a href="#">  </a> -->
+                            <a
+                              href="javascript:void(0)"
+                              lng-tag="outdoorweddings"
+                            >
+                              Outdoor Wedding
+                            </a>
+                            <!-- <a href="javascript:void(0)">  </a> -->
                           </div>
-                          <h3 class="title">
-                            <a href="#"> </a>
-                          </h3>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="project-card">
-                        <a href="#" class="img">
+                        <a href="javascript:void(0)" class="img">
                           <img
                             src="assets/img/projects/outdoor-3.png"
                             alt=""
@@ -978,18 +998,23 @@
                         </a>
                         <div class="info">
                           <div class="tags">
-                            <a href="#"> Outdoor Wedding </a>
-                            <!-- <a href="#"> Furniture </a> -->
+                            <a
+                              href="javascript:void(0)"
+                              lng-tag="outdoorweddings"
+                            >
+                              Outdoor Wedding
+                            </a>
+                            <!-- <a href="javascript:void(0)"> Furniture </a> -->
                           </div>
                           <h3 class="title">
-                            <a href="#"></a>
+                            <a href="javascript:void(0)"></a>
                           </h3>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="project-card">
-                        <a href="#" class="img">
+                        <a href="javascript:void(0)" class="img">
                           <img
                             src="assets/img/projects/outdoor-4.png"
                             alt=""
@@ -1009,11 +1034,13 @@
                         </a>
                         <div class="info">
                           <div class="tags">
-                            <a href="#"> Outdoor Wedding </a>
+                            <a
+                              href="javascript:void(0)"
+                              lng-tag="outdoorweddings"
+                            >
+                              Outdoor Wedding
+                            </a>
                           </div>
-                          <h3 class="title">
-                            <a href="#"> </a>
-                          </h3>
                         </div>
                       </div>
                     </div>
@@ -1030,151 +1057,6 @@
         </section>
         <!--  End projects  -->
 
-        <!--  Start awards  -->
-        <!-- <section class="tc-awards-style2">
-          <div class="container">
-            <h2 class="fsz-45 fw-500 text-center mb-30">
-              Featured
-              <span class="sub-font fst-italic color-orange1 fw-400">
-                awards
-              </span>
-            </h2>
-            <div class="awards">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div
-                    class="award-card wow fadeInUp slow"
-                    data-wow-delay="0.2s"
-                  >
-                    <div class="logo">
-                      <img src="assets/img/logos/logo1.svg" alt="" />
-                    </div>
-                    <h5 class="fsz-24 sub-font title">
-                      Winner Best of Substainable Interior 2023
-                    </h5>
-                    <a href="#" class="color-666 text-capitalize">
-                      Neoclassical Sofa
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div
-                    class="award-card wow fadeInUp slow"
-                    data-wow-delay="0.4s"
-                  >
-                    <div class="logo">
-                      <img src="assets/img/logos/logo2.svg" alt="" />
-                    </div>
-                    <h5 class="fsz-24 sub-font title">
-                      Top 5 Interior Design Inspiration 2023
-                    </h5>
-                    <a href="#" class="color-666 text-capitalize">
-                      ABERY Apartment Master Bedroom
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div
-                    class="award-card wow fadeInUp slow"
-                    data-wow-delay="0.6s"
-                  >
-                    <div class="logo">
-                      <img src="assets/img/logos/logo3.svg" alt="" />
-                    </div>
-                    <h5 class="fsz-24 sub-font title">
-                      Top 10 Agency Use Sustainable Material
-                    </h5>
-                    <a href="#" class="color-666 text-capitalize">
-                      Neoclassical Sofa
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div
-                    class="award-card wow fadeInUp slow"
-                    data-wow-delay="0.8s"
-                  >
-                    <div class="logo">
-                      <img src="assets/img/logos/logo4.svg" alt="" />
-                    </div>
-                    <h5 class="fsz-24 sub-font title">
-                      Winner Best CGI Artirst 2022
-                    </h5>
-                    <a href="#" class="color-666 text-capitalize">
-                      Boston CGI
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div
-                    class="award-card wow fadeInUp slow"
-                    data-wow-delay="0.2s"
-                  >
-                    <div class="logo">
-                      <img src="assets/img/logos/logo5.svg" alt="" />
-                    </div>
-                    <h5 class="fsz-24 sub-font title">
-                      Winner UID of The Year in 2020
-                    </h5>
-                    <a href="#" class="color-666 text-capitalize">
-                      Bristo Restaurant
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div
-                    class="award-card wow fadeInUp slow"
-                    data-wow-delay="0.4s"
-                  >
-                    <div class="logo">
-                      <img src="assets/img/logos/logo6.svg" alt="" />
-                    </div>
-                    <h5 class="fsz-24 sub-font title">
-                      Top 5 Excellent Furniture Store USA 2020
-                    </h5>
-                    <a href="#" class="color-666 text-capitalize">
-                      Wooden Furniture
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div
-                    class="award-card wow fadeInUp slow"
-                    data-wow-delay="0.6s"
-                  >
-                    <div class="logo">
-                      <img src="assets/img/logos/logo7.svg" alt="" />
-                    </div>
-                    <h5 class="fsz-24 sub-font title">
-                      Top 5 Excellent Furniture Store USA 2020
-                    </h5>
-                    <a href="#" class="color-666 text-capitalize">
-                      Wooden Furniture
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div
-                    class="award-card wow fadeInUp slow"
-                    data-wow-delay="0.8s"
-                  >
-                    <div class="logo">
-                      <img src="assets/img/logos/logo8.svg" alt="" />
-                    </div>
-                    <h5 class="fsz-24 sub-font title">
-                      Top 5 Excellent Furniture Store USA 2020
-                    </h5>
-                    <a href="#" class="color-666 text-capitalize">
-                      Wooden Furniture
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-        <!--  End awards  -->
-
         <!--  Start testimonials  -->
         <section class="tc-testimonials-style2">
           <div class="container">
@@ -1186,7 +1068,7 @@
                       <div class="slider-card">
                         <div class="img">
                           <img
-                            src="assets/img/testimonials/testi1.jpg"
+                            src="assets/img/testimonials/testi1.JPG"
                             alt=""
                             class="main-img img-cover"
                           />
@@ -1207,7 +1089,7 @@
                       <div class="slider-card">
                         <div class="img">
                           <img
-                            src="assets/img/testimonials/testi2.jpg"
+                            src="assets/img/testimonials/testi2.jpeg"
                             alt=""
                             class="main-img img-cover"
                           />
@@ -1228,7 +1110,7 @@
                       <div class="slider-card">
                         <div class="img">
                           <img
-                            src="assets/img/testimonials/testi3.jpg"
+                            src="assets/img/testimonials/testi3.jpeg"
                             alt=""
                             class="main-img img-cover"
                           />
@@ -1260,11 +1142,11 @@
                     <!-- ---------------------------------------- -->
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="text sub-font">
-                          "Great service and relationship from the design to
-                          implementation even after project completion. Regular
-                          updates and communication from start to finish. Highly
-                          recommended!"
+                        <div class="text sub-font" lng-tag="testi1">
+                          God willing, everything was beautiful, and engineer
+                          Mina is a cooperative and creative person, and in
+                          time, everything will be finished early, God willing,
+                          and this will not be the last I deal with him.
                         </div>
                         <div class="user-wrapper">
                           <div class="user-content">
@@ -1276,18 +1158,19 @@
                               />
                             </div>
                             <div class="inf">
-                              <h6 class="fsz-18">Bradley Gordon</h6>
-                              <p class="color-ccc mt-2">Hillsborough, NC</p>
+                              <h6 class="fsz-18" lng-tag="testi1name">
+                                Dan omar
+                              </h6>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="text sub-font">
-                          "Great service and relationship from the design to
-                          implementation even after project completion. Regular
-                          updates and communication from start to finish. Highly
-                          recommended!"
+                        <div class="text sub-font" lng-tag="testi2">
+                          Kushat Nadine Event. Excellent at my wedding.
+                          Coordination and professional work. Everything was as
+                          we wanted and the shortest thing ever. Punctual and
+                          amazing work, Mina 👍🏻🙏🏻 …
                         </div>
                         <div class="user-wrapper">
                           <div class="user-content">
@@ -1299,8 +1182,57 @@
                               />
                             </div>
                             <div class="inf">
-                              <h6 class="fsz-18">Bradley Gordon</h6>
-                              <p class="color-ccc mt-2">Hillsborough, NC</p>
+                              <h6 class="fsz-18" lng-tag="testi2name">Rahaf</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text sub-font" lng-tag="testi3">
+                          May God grant him good health. Engineer Mina did not
+                          fall short, nothing was missing from the contract.
+                          Frankly, he did a fine job and was honest. Even the
+                          staff did not fall short and were keen to get the
+                          final appearance in a beautiful, clean and tidy
+                          manner... They deserve more than 5 stars.
+                        </div>
+                        <div class="user-wrapper">
+                          <div class="user-content">
+                            <div class="img">
+                              <img
+                                src="assets/img/avatar.jpg"
+                                alt=""
+                                class="img-cover"
+                              />
+                            </div>
+                            <div class="inf">
+                              <h6 class="fsz-18" lng-tag="testi3name">
+                                Yousar H
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text sub-font" lng-tag="testi4">
+                          All greetings and thanks to Mr. Ahmed for the
+                          distinguished services and special prices, all the
+                          sophistication and distinction, with best wishes for
+                          progress
+                        </div>
+                        <div class="user-wrapper">
+                          <div class="user-content">
+                            <div class="img">
+                              <img
+                                src="assets/img/avatar.jpg"
+                                alt=""
+                                class="img-cover"
+                              />
+                            </div>
+                            <div class="inf">
+                              <h6 class="fsz-18" lng-tag="testi4name">
+                                Amal Kasem
+                              </h6>
                             </div>
                           </div>
                         </div>
@@ -1327,7 +1259,7 @@
           <div class="container">
             <div class="row align-items-center mb-40">
               <div class="col-lg-8">
-                <h2 class="fsz-45 fw-500">
+                <h2 class="fsz-45 fw-500" lng-tag="iglatestpost">
                   Latest
                   <span class="sub-font fst-italic color-orange1 fw-400">
                     Instagram Post
@@ -1336,10 +1268,10 @@
               </div>
               <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/nadeen_.events?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   class="butn borderd border rounded-pill hover-bg-black bg-white"
                 >
-                  <span>
+                  <span lng-tag="igcheckout">
                     Check Out @Nadeen_events
                     <i class="ms-2 fal fa-long-arrow-right ico-45"></i>
                   </span>
@@ -1353,7 +1285,11 @@
                     class="blog-card wow fadeInUp slow"
                     data-wow-delay="0.2s"
                   >
-                    <a href="#" class="img">
+                    <a
+                      href="https://www.instagram.com/nadeen_.events?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      class="img"
+                    >
                       <img
                         src="assets/img/blog/indoor-5.png"
                         alt=""
@@ -1370,7 +1306,11 @@
                     class="blog-card wow fadeInUp slow"
                     data-wow-delay="0.4s"
                   >
-                    <a href="#" class="img">
+                    <a
+                      href="https://www.instagram.com/nadeen_.events?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      class="img"
+                    >
                       <img
                         src="assets/img/blog/indoor-6.png"
                         alt=""
@@ -1387,7 +1327,11 @@
                     class="blog-card wow fadeInUp slow"
                     data-wow-delay="0.6s"
                   >
-                    <a href="#" class="img">
+                    <a
+                      href="https://www.instagram.com/nadeen_.events?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      class="img"
+                    >
                       <img
                         src="assets/img/blog/outdoor-6.png"
                         alt=""
@@ -1404,7 +1348,11 @@
                     class="blog-card wow fadeInUp slow"
                     data-wow-delay="0.8s"
                   >
-                    <a href="#" class="img">
+                    <a
+                      href="https://www.instagram.com/nadeen_.events?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      class="img"
+                    >
                       <img
                         src="assets/img/blog/outdoor-5.png"
                         alt=""
@@ -1423,7 +1371,7 @@
         <!--  End blog  -->
 
         <!--  Start contact  -->
-        <section class="tc-contact-style2">
+        <!-- <section class="tc-contact-style2">
           <div class="container">
             <div class="contact-form">
               <div class="row justify-content-center">
@@ -1555,7 +1503,7 @@
                           >
                             By summiting, i’m agree to the
                             <a
-                              href="#"
+                              href="javascript:void(0)"
                               class="text-decoration-underline text-capitalize"
                               target="_blank"
                             >
@@ -1581,7 +1529,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!--  End contact  -->
       </main>
       <!--End-Contents-->
@@ -1593,28 +1541,28 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="foot-info">
-                  <h3 class="fsz-35 fw-500">
+                  <h3 class="fsz-35 fw-500" lng-tag="footertitle">
                     Space. Aesthetic. Life. Moments.
                     <span class="sub-font color-orange1 fst-italic">
                       Yourself
                     </span>
                   </h3>
-                  <a
-                    href="#"
-                    class="butn borderd border rounded-pill hover-bg-black mt-80"
-                  >
-                    <span> <i class="me-2 fal fa-globe"></i> English </span>
-                  </a>
                 </div>
               </div>
               <div class="col-lg-3 offset-lg-1">
                 <div class="links-group">
-                  <h5 class="sub-title fsz-24 fw-500 mb-30 mt-5 mt-lg-0">
+                  <h5
+                    class="sub-title fsz-24 fw-500 mb-30 mt-5 mt-lg-0"
+                    lng-tag="footerlocationtitle"
+                  >
                     AL Khobar , KSA
                   </h5>
                   <ul>
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://maps.app.goo.gl/4V3SHuasV3kvx5Hh8"
+                        lng-tag="footerlocation"
+                      >
                         Box 7216, 2688 10th Street, Al Khobar North, Al Khobar
                         7216, 34428 Al Khobar North 34428 34428, Saudi Arabia
                       </a>
@@ -1626,27 +1574,19 @@
               </div>
               <div class="col-lg-2">
                 <div class="links-group">
-                  <h5 class="sub-title fsz-24 fw-500 mb-30 mt-5 mt-lg-0">
+                  <h5
+                    class="sub-title fsz-24 fw-500 mb-30 mt-5 mt-lg-0"
+                    lng-tag="company"
+                  >
                     Company
                   </h5>
                   <ul>
-                    <li><a href="about.html"> About </a></li>
-                    <li><a href="work.html"> Works </a></li>
-                    <li><a href="instagram"> Instagram </a></li>
-                    <li><a href="contact.html"> Contact </a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="links-group">
-                  <h5 class="sub-title fsz-24 fw-500 mb-30 mt-5 mt-lg-0">
-                    Helps
-                  </h5>
-                  <ul>
-                    <li><a href="#"> Terms & Conditions </a></li>
-                    <li><a href="#"> Partner Policy </a></li>
-                    <li><a href="#"> Affiliate Program </a></li>
-                    <li><a href="#"> FAQs </a></li>
+                    <li><a href="about.html" lng-tag="about"> About </a></li>
+                    <li><a href="work.html" lng-tag="works"> Works </a></li>
+
+                    <li>
+                      <a href="contact.html" lng-tag="contact"> Contact </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -1706,6 +1646,9 @@
       <!--  End footer  -->
     </div>
 
+    <!-- Translate -->
+    <script src="./assets/js/translate.js"></script>
+    <!-- End Translate -->
     <!--  request  -->
     <script src="./assets/js/lib/jquery-3.0.0.min.js"></script>
     <script src="./assets/js/lib/jquery-migrate-3.0.0.min.js"></script>
