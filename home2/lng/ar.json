@@ -99,7 +99,11 @@
   "iglatestpost": "أحدث <span class=\"sub-font fst-italic color-orange1 fw-400\"> منشور إنستغرام </span>",
   "igcheckout": "تحقق من @Nadeen_events",
 
-  "footertitle": "المساحة. الجمالية. الحياة. اللحظات. <span class=\"sub-font color-orange1 fst-italic\"> نفسك </span>",
-  "footerlocationtitle": "الخبر ، المملكة العربية السعودية",
-  "footerlocation": "ص.ب 7216، 2688 شارع 10، شمال الخبر، الخبر 7216، 34428 شمال الخبر 34428، المملكة العربية السعودية"
+  "footertitle": "الفضاء. الجمالية. الحياة. اللحظات. <span class=\"sub-font color-orange1 fst-italic\"> نفسك </span>",
+  "footerlocationtitle1": "الخبر، السعودية",
+  "footerlocation1-1": "صندوق بريد 7216، 2688 شارع 10، الخبر الشمالية، الخبر 7216، 34428 الخبر الشمالية 34428، المملكة العربية السعودية",
+  "footerlocationtitle2": "شارع الأمير مشعل، الخبر 34228",
+  "footerlocation2-1": "شارع الأمير مشعل، تقاطع 10/11، الخبر 34228، المملكة العربية السعودية",
+  "footerlocationtitle3": "6969 شارع الأمير مشعل",
+  "footerlocation3-1": "نادين كوشات، الطابق الأرضي، 6969 شارع الأمير مشعل، تقاطع 7/8، الخبر الشمالية، الخبر 34428، المملكة العربية السعودية"
 }
